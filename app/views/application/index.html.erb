@@ -1,8 +1,8 @@
 <% @award = Award.generate %>
 <!-- CSS only -->
 
-<div class="container" style="text-align:center; margin-top:10%">
+<div class="container" style="text-align:center; margin-top:5%">
 
-<h1 class="heading">You've been awarded the <%= @award.color.capitalize %> <%= @award.type.capitalize%> of <%= @award.name.capitalize %> </h1>
-<img src="<%= @award.image_url  %>" style="max-width:80%">
+<h1 class="heading">You've been awarded the <%= @award.color.capitalize %> <%= @award.type.capitalize%> of <%= @award.name.titleize %> </h1>
+<img src="<%= @award.image_url  %>" style="max-width:80%; border: 1px solid black; border-radius:5px;">
 </div>

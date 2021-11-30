@@ -5,10 +5,10 @@ class Award
         types = ['Star', 'Cross', 'Circle', 'Rhombus']
         colors = ['Gold', 'Silver', 'Bronze', 'Purple']
         page = Wikipedia.find_random
-        page.image_urls&.first
+        page.image_urls.first
         award = new()
         award.name = page.title
-        award.image_url = page.image_urls.first
+        award.image_url = page.image_urls&.first
         award.type = types.sample
         award.color = colors.sample
         award
